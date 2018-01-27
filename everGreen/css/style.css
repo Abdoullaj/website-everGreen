@@ -4,65 +4,110 @@
   box-sizing: border-box;
 }
 
-.wrapper {
-  background-color: blue;
-}
-body {
-  background-color: blue;
-}
+
 
 /*****  HEADER ****/
+
 .mainTopBar {
   position: fixed;
   background-color: red;
   width: 100%;
   display: flex;
-  font-size: 100%;
+  font-size: 125%;
   margin: 5px 0px;
 }
 
 .left-button {
   width:12%;
   padding: 25px 1%;
-  background-color: yellow;
+  background-color:  rgb(67, 185, 70) ;
   text-align: center;
+  color: white;
 }
 .topTitle {
   width: 100%;
   position: absolute;
   padding: 25px;
-  background-color: green;
+  background-color: rgb(14, 71, 20);
+  color: white;
   z-index: -1;
   text-align: center;
 }
 
 /***** MAIN ******/
 
-main {
-    margin: 0px 10%;
-    width: 80%;
-    background-color: purple;
-    height: 100%;
+.wrapper {
+    margin: 0px 5%;
+    margin-top:105px;
+    width: 90%;
 }
 /***** SECTION ****/
 
 .topSpace {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+}
+.titleTopSpace {
+  font-size: 20px;
+  margin: 16px 0px;
+  font-weight: bold;
+  background: white;
+  color: rgb(14, 71, 20);
 }
 
-.longBar {
-  height: 5px;
-  background-color: grey;
-}
 
 /***** ARTICLE****/
 
+.textArticle {
+  margin: 16px 0px;
+  line-height: 25px;
+}
+.immagineEverGreen {
+  width: 100%;
+  height: 300px;
+  margin: 16px 0px;
+
+}
+
+.bigLink {
+  display: block;
+  text-decoration: none;
+  font-size:25px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 15px 0px;
+  margin: 10px 0px;
+}
+#do-something {
+  background-color: rgb(67, 185, 70);
+}
+#think-about-it {
+  background-color: rgb(189, 196, 198);
+}
+.bigLink:hover {
+  /* change background*/
+}
 
 /***** FOOTER ****/
 
-
-
+.bottomSpace {
+  margin: 40px 0px;
+}
+.listOfIcons {
+  display: flex;
+  flex-direction: row;
+  font-size: 70px;
+}
+.listOfIcons li{
+  margin: 5px 15px 40px 5px;
+}
+.listOfIcons a {
+  text-decoration: none;
+  color: rgb(189, 196, 198);
+}
 
 /*****LEFT MENU ****/
 .leftMenuBar {

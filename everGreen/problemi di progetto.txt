@@ -1,0 +1,4 @@
+
+Quando metto il margin-top: x al main, anche l'head (che è in fixed) va verso il basso. -> Risolto mettendo un <div>.</div>
+-.topSpace ha 2 div, uno con testo e l'altro con div con background di colore diverso. Per mostrare il secondo devo per forza mettere una width, ma in questo modo fa andare a capo il testo alla sinsitra.
+-icon e caratterisconosciuti. 
