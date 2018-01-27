@@ -112,7 +112,14 @@
 /*****LEFT MENU ****/
 
 .leftMenuBar {
-  position: absolute;
+  /* display: none;*/
+  position: fixed;
+  height: 100%;
+  width: 70%;
   z-index: 5; background-color: black;
   color: white;
+}
+
+.navBarBlocked {
+  position: absolute;
 }
