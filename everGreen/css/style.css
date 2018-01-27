@@ -1,0 +1,70 @@
+/***** BODY  ****/
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: blue;
+}
+body {
+  background-color: blue;
+}
+
+/*****  HEADER ****/
+.mainTopBar {
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  display: flex;
+  font-size: 100%;
+  margin: 5px 0px;
+}
+
+.left-button {
+  width:12%;
+  padding: 25px 1%;
+  background-color: yellow;
+  text-align: center;
+}
+.topTitle {
+  width: 100%;
+  position: absolute;
+  padding: 25px;
+  background-color: green;
+  z-index: -1;
+  text-align: center;
+}
+
+/***** MAIN ******/
+
+main {
+    margin: 0px 10%;
+    width: 80%;
+    background-color: purple;
+    height: 100%;
+}
+/***** SECTION ****/
+
+.topSpace {
+  display: flex;
+  flex-direction: row;
+}
+
+.longBar {
+  height: 5px;
+  background-color: grey;
+}
+
+/***** ARTICLE****/
+
+
+/***** FOOTER ****/
+
+
+
+
+/*****LEFT MENU ****/
+.leftMenuBar {
+  display: none;
+}
