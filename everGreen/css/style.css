@@ -14,13 +14,13 @@
   width: 100%;
   display: flex;
   font-size: 125%;
-  margin: 5px 0px;
+  margin-bottom: 5px;
 }
 
 .left-button {
   width:12%;
   padding: 25px 1%;
-  background-color:  rgb(67, 185, 70) ;
+  background-color:  rgb(114, 222, 115) ;
   text-align: center;
   color: white;
 }
@@ -82,7 +82,7 @@
   margin: 10px 0px;
 }
 #do-something {
-  background-color: rgb(67, 185, 70);
+  background-color: rgb(114, 222, 115);
 }
 #think-about-it {
   background-color: rgb(189, 196, 198);
@@ -110,6 +110,9 @@
 }
 
 /*****LEFT MENU ****/
+
 .leftMenuBar {
-  display: none;
+  position: absolute;
+  z-index: 5; background-color: black;
+  color: white;
 }
