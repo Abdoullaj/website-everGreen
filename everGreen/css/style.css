@@ -41,11 +41,7 @@
 }
 /***** SECTION ****/
 
-.topSpace {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+
 .titleTopSpace {
   font-size: 20px;
   margin: 16px 0px;
@@ -53,6 +49,8 @@
   background: white;
   color: rgb(14, 71, 20);
 }
+
+
 
 
 /***** ARTICLE****/
@@ -182,7 +180,7 @@
 .navBarBlocked li {
    cursor: pointer;
    padding: 17px;
-
+  border-bottom: 0.5px solid rgba(130, 134, 122, 0.47);
    -moz-transition-property:   padding;
    -moz-transition-duration: 1s;
 
