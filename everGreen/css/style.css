@@ -57,15 +57,19 @@
 
 /***** ARTICLE****/
 
+.foto {
+  width: 100%;
+}
+
 .textArticle {
   margin: 16px 0px;
   line-height: 25px;
 }
+
 .immagineEverGreen {
   width: 100%;
-  height: 300px;
   margin: 16px 0px;
-
+  border-radius: 5%;
 }
 
 .bigLink {
@@ -91,7 +95,6 @@
 }
 #think-about-it:hover {
   background-color: rgb(33, 28, 33);
-  margin-bottom: 15px;
 }
 
 
@@ -137,7 +140,7 @@
 }
 
 .instagram:hover {
-  color: black;
+  color: rgb(186, 69, 193);
 }
 .youtube:hover {
   color: red;
@@ -345,4 +348,15 @@
       -o-transition-duration: 1s;
   }
 
+  .doubleButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .firstButton {
+    width: 48%;
+  }
+  .secondButton {
+    width: 48%;
+  }
 }
