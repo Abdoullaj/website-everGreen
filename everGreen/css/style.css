@@ -5,7 +5,6 @@
 }
 
 
-
 /*****  HEADER ****/
 
 .mainTopBar {
@@ -86,12 +85,32 @@
 #think-about-it {
   background-color: rgb(189, 196, 198);
 }
-.bigLink:hover {
-  /* change background*/
+
+#do-something:hover {
+  background-color: rgb(14, 71, 20);
 }
+#think-about-it:hover {
+  background-color: rgb(33, 28, 33);
+  margin-bottom: 15px;
+}
+
+
+
 
 /***** FOOTER ****/
 
+.bottomSpace {
+  background-color: rgba(197, 199, 180, 0.27);
+  padding: 30px;
+
+}
+
+.titleBottomSpace {
+  font-size: 20px;
+  margin: 16px 0px;
+  font-weight: bold;
+  color: rgb(14, 71, 20);
+}
 .bottomSpace {
   margin: 40px 0px;
 }
@@ -108,45 +127,83 @@
   color: rgb(189, 196, 198);
 }
 
+
+.facebook:hover {
+  color: rgb(32, 27, 222);
+}
+
+.twitter:hover {
+  color: rgb(29, 171, 241);
+}
+
+.instagram:hover {
+  color: black;
+}
+.youtube:hover {
+  color: red;
+}
+.google:hover {
+  color: rgb(210, 13, 13);
+}
 /*****LEFT MENU ****/
 
 .leftMenuBar {
   /* display: none;*/
   position: fixed;
   z-index: 5;
-  width: 70%;
+  width: 38%;
+  right: auto;
   height: 100vh;
   color: white;
-  margin-left: -70%;
+  margin-left: -60%;
+
+  -moz-transition-property:all;
+  -moz-transition-duration: 1s;
+
+  -webkit-transition-property:  all;
+  -webkit-transition-duration: 1s;
+
+  -o-transition-property:  all;
+  -o-transition-duration: 1s;
 }
 
 .navBarBlocked {
   position: absolute;
   width: 100%;
   height:100%;
-  background-color: black;
-
+  background-color: rgb(14, 71, 20);;
+  font-weight:bold;
 
 }
 
 .navBarBlocked li {
    cursor: pointer;
    padding: 17px;
+
+   -moz-transition-property:   padding;
+   -moz-transition-duration: 1s;
+
+   -webkit-transition-property:  padding;
+   -webkit-transition-duration: 1s;
+
+   -o-transition-property:   padding;
+   -o-transition-duration: 1s;
  }
 .navBarBlocked li:hover {
    background-color: white;
    color: black;
  }
 
- .firstInside  , .secondInside {
-   display:none;
+ .firstInside , .secondInside  {
+   display: none;
+  color: rgb(189, 196, 198);
  }
 
- .dropDownButton:hover + .firstInside , .firstInside:hover {
-   display: block;
+.fristDropped .firstInside {
+  display: block;
  }
 
- .dropSecondInside:hover + .secondInside , .secondInside:hover {
+.secondDropped  .secondInside{
    display: block;
  }
 
@@ -164,28 +221,128 @@
 .menuOpened .leftMenuBar {
   margin-left: 0px;
 
-  -moz-transition-property: all;
+  -moz-transition-property:   margin-left;
   -moz-transition-duration: 1s;
 
-  -webkit-transition-property: all;
+  -webkit-transition-property:   margin-left;
   -webkit-transition-duration: 1s;
 
-  -o-transition-property: all;
+  -o-transition-property:   margin-left;
   -o-transition-duration: 1s;
 
 }
 
+.menuOpened {
+  overflow: hidden;
+}
 .menuOpened .realPage {
 
+  margin-right: -60%;
   margin-left: 60%;
 
-  -moz-transition-property: all;
+  -moz-transition-property:   all;
   -moz-transition-duration: 1s;
 
-  -webkit-transition-property: all;
+  -webkit-transition-property:   all;
   -webkit-transition-duration: 1s;
 
-  -o-transition-property: all;
+  -o-transition-property:   all;
   -o-transition-duration: 1s;
+
+}
+
+.realPage {
+
+   margin-left: 0px;
+   margin-right: 0px;
+
+   -moz-transition-property: all;
+   -moz-transition-duration: 1s;
+
+   -webkit-transition-property: all;
+   -webkit-transition-duration: 1s;
+
+   -o-transition-property: all;
+   -o-transition-duration: 1s;
+
+}
+
+.menuMoved .leftMenuBar{
+ margin-left: 62%;
+  -moz-transition-property:   all;
+  -moz-transition-duration: 1s;
+
+  -webkit-transition-property:  all;
+  -webkit-transition-duration: 1s;
+
+  -o-transition-property:   all;
+  -o-transition-duration: 1s;
+}
+
+.menuMoved .realPage{
+
+     margin-left: 0px;
+
+     -moz-transition-property:   all;
+     -moz-transition-duration: 1s;
+
+     -webkit-transition-property:  all;
+     -webkit-transition-duration: 1s;
+
+     -o-transition-property:   all;
+     -o-transition-duration: 1s;
+}
+
+
+/**** coolAnimation ***/
+
+
+.leftMenuBar li:hover {
+  padding-left: +29px;
+
+  -moz-transition-property:   all;
+  -moz-transition-duration: 1s;
+
+  -webkit-transition-property:  all;
+  -webkit-transition-duration: 1s;
+
+  -o-transition-property:   all;
+  -o-transition-duration: 1s;
+}
+
+
+/********* MEDIA QUERY *********/
+
+@media screen and (min-width: 1220px) {
+
+  .leftMenuBar {
+    position: fixed;
+    z-index: 5;
+    width: 60%;
+    height: 100vh;
+    color: white;
+    margin-left: -60%;
+
+    -moz-transition-property:   all;
+    -moz-transition-duration: 1s;
+
+    -webkit-transition-property:  all;
+    -webkit-transition-duration: 1s;
+
+    -o-transition-property:   all;
+    -o-transition-duration: 1s;
+  }
+
+  .menuMoved .leftMenuBar{
+     margin-left: 40%;
+      -moz-transition-property:   all;
+      -moz-transition-duration: 1s;
+
+      -webkit-transition-property:  all;
+      -webkit-transition-duration: 1s;
+
+      -o-transition-property:   all;
+      -o-transition-duration: 1s;
+  }
 
 }
